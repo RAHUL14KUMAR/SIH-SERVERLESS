@@ -61,7 +61,7 @@ provider:
 
 functions:
   profile:
-    handler:  src/userHandlers/profile.handler
+    handler:  src/handlers/profile.handler
     events:
       - httpApi:
           path: /profile
@@ -120,5 +120,4 @@ functions:
 
 plugins:
   - serverless-offline
-  - serverless-cors-plugin
   - serverless-dotenv-plugin
